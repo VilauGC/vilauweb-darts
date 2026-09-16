@@ -1,5 +1,16 @@
 # Darts
 
+The project is available to use at: 
+https://darts.vilauweb.ro
+
+# The purpose
+The purpose of this application is to help Darts players to make faster math calculations. 
+It has the options of chosing which numbers you want to exercise with. 
+
+# New features
+If you want to have more features inside this project you can copy it, and paste the entire codebase into Claude code or ChatGPT and ask it to enhanced the project with which feature you want. 
+Or ask me to add it to the current codebase.
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.8.
 
 ## Development server
