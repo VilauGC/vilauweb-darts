@@ -1,8 +1,8 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 @Component({
-  imports: [RouterOutlet],
+  imports: [MatProgressBarModule],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

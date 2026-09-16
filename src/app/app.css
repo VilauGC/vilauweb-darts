@@ -1,0 +1,16 @@
+.center-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 640px; /* progress-bar-ul are nevoie de o lățime definită, altfel ocupă 100% din părinte */
+}
