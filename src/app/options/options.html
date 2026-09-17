@@ -6,14 +6,20 @@
   </div>
 
   <input
-    #answerInput
-    class="answer-input"
-    type="number"
-    inputmode="numeric"
-    placeholder="suma"
-    (input)="verificaRaspuns(answerInput.value)"
-    autofocus
-  />
+  #answerInput
+  class="answer-input"
+  type="text"
+  inputmode="numeric"
+  pattern="[0-9]*"
+  autocomplete="off"
+  autocorrect="off"
+  autocapitalize="off"
+  spellcheck="false"
+  name="dart-answer"
+  placeholder="Suma ta"
+  (input)="verificaRaspuns(answerInput.value)"
+  autofocus
+/>
 
   <button matFab extended (click)="getRandomInt()" class="generate-btn">
     <mat-icon>favorite</mat-icon>
