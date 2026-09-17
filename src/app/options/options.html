@@ -1,0 +1,22 @@
+<section class="dart-game">
+  <div class="equation">
+    <span class="number">{{nr1}}</span>
+    <span class="operator">+</span>
+    <span class="number">{{nr2}}</span>
+  </div>
+
+  <input
+    #answerInput
+    class="answer-input"
+    type="number"
+    inputmode="numeric"
+    placeholder="suma"
+    (input)="verificaRaspuns(answerInput.value)"
+    autofocus
+  />
+
+  <button matFab extended (click)="getRandomInt()" class="generate-btn">
+    <mat-icon>favorite</mat-icon>
+    Genereaza combinatie
+  </button>
+</section>

@@ -1,8 +1,9 @@
 import { Component, signal } from '@angular/core';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { Options } from './options/options';
 
 @Component({
-  imports: [MatProgressBarModule],
+  imports: [MatProgressBarModule, Options],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

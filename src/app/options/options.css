@@ -1,0 +1,71 @@
+.dart-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 1.5rem 1.25rem;
+  box-sizing: border-box;
+}
+
+/* Numerele - mari, ferme, usor de citit de la distanta */
+.equation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.number {
+  font-size: clamp(3.5rem, 18vw, 6rem);
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+.operator {
+  font-size: clamp(2rem, 8vw, 3rem);
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+/* Input - inalt, usor de apasat, text mare si centrat */
+.answer-input {
+  width: 100%;
+  max-width: 320px;
+  box-sizing: border-box;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.875rem 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  outline: none;
+  transition: border-color 0.15s ease;
+  -moz-appearance: textfield;
+}
+
+.answer-input:focus {
+  border-color: currentColor;
+}
+
+/* elimina sagetile de la input number pe webkit */
+.answer-input::-webkit-outer-spin-button,
+.answer-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.generate-btn {
+  width: 100%;
+  max-width: 320px;
+}
+
+/* Pe ecrane foarte inguste, reducem usor padding-ul lateral */
+@media (max-width: 360px) {
+  .dart-game {
+    padding: 1rem 1rem;
+  }
+}
