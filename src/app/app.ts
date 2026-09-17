@@ -1,11 +1,10 @@
 import { Component, signal } from '@angular/core';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { Options } from './options/options';
-import { Footer } from './footer/footer';
-import { Header } from './header/header';
+
 
 @Component({
-  imports: [MatProgressBarModule, Options, Footer, Header],
+  imports: [MatProgressBarModule, Options],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
